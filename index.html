@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Stage 03 - formulario intermediário</title>
+</head>
+
+<body>
+    <div id="page">
+        <header id="cabecalho">
+            <div class="cabecalho__content">
+                <h1>MENTORIA</h1>
+                <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+            </div>
+        </header>
+
+        <form id="my-form">
+            <fieldset>
+                <div class="info-pessoal-wrapper">
+                 <legend>Informações pessoais</legend>
+                    <hr>
+                    <div class="nome__completo">
+                        <div class="input-names__wrapper">
+                            <label for="info-name">Nome</label>
+                            <input type="text" id="info-name" required>
+                        </div>
+                        <div class="input-names__wrapper">
+                            <label for="info-surname">Sobrenome </label>
+                            <input type="text" id="info-surname" required>
+                        </div>
+                    </div>
+                
+                    <div class="input__wrapper">
+                        <label for="info-email">E-mail<span>(Digite um email válido)</span></label>
+                        <input type="email" id="info-email" required>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <label for="info-password">Senha <span>(Mínimo de 8 caracteres)</span></label>
+                        <input type="password" id="info-password" required minlength="6">
+                    </div>
+                </div>    
+            </fieldset>
+
+            <fieldset>
+                <div class="info-pessoal-wrapper">
+                 <legend>Informações do mentor</legend>
+                 <hr>
+                    <div class="input__mentor">
+                        <label for="info-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                        <input type="text" id="info-mentor" required>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                    <div class="info-pessoal-mentorias">
+                        <legend>Seus horários Disponíveis</legend>
+                        <hr>
+                        <legend class="info-pessoal-mentor__subtitle">Primeira mentoria</legend>
+                            <div class="horarios">
+                                <div class="input__mentor">
+                                    <label for="info-date">Data <span>(DD/MM/AAAA)</span></label>
+                                    <input type="date" id="info-date" >
+                                </div>
+
+                                <div class="input__mentor">
+                                    <label for="info-begin">Das</label>
+                                    <input type="time" id="info-begin" >
+                                </div>
+
+                                <div class="input__mentor">
+                                    <label for="info-end">Até</label>
+                                    <input type="time" id="info-end" >
+                                </div>
+                            </div>       
+
+                            <legend class="info-pessoal-mentor__subtitle">Segunda mentoria</legend>
+                            <div class="horarios">
+                                <div class="input__mentor">
+                                    <label for="info-date">Data <span>(DD/MM/AAAA)</span></label>
+                                    <input type="date" id="info-date" >
+                                </div>
+
+                                <div class="input__mentor">
+                                    <label for="info-begin">Das</label>
+                                    <input type="time" id="info-begin">
+                                </div>
+
+                                <div class="input__mentor">
+                                    <label for="info-end">Até</label>
+                                    <input type="time" id="info-end">
+                                </div>
+                            </div> 
+                    </div>
+            </fieldset>
+        </form>
+
+        <div class="rodape">
+            <input type="submit" value="SALVAR" form="my-form">
+        </div>
+    </div>
+</body>
+</html>

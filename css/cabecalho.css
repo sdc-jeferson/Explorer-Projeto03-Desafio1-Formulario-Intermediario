@@ -1,0 +1,19 @@
+.cabecalho__content{
+    padding-top: 140px;
+    width: 417px;
+    
+}
+
+.cabecalho__content h1{
+    font-family: var(--font-secundaria);
+    color:#fff;
+    font-size: 48px;
+}
+
+.cabecalho__content  p{
+    padding-top: 18px;
+    font-family: var(--font-principal);
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}

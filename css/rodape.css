@@ -1,0 +1,31 @@
+.rodape{
+    background: var(--background);
+    width: 750px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 94px;
+    padding: 64px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.rodape input{
+    width: 100%;
+    height: 56px;
+
+    background: var(--cor-button);
+    border: none;
+    border-radius: 20px;
+    
+    display: block;
+    margin: auto;
+    color: #fff;
+    font-family: var(--font-secundaria);
+    font-size: 20px;
+    line-height: 26px;
+
+    cursor: pointer;
+}
+
+.rodape input:hover{
+    background: #a84a5d;
+}
